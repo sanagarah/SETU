@@ -1,0 +1,383 @@
+:root {
+  --color-primary-blue: #44b1ce;
+  --color-primary-yellow: #dfb029;
+  --color-primary-brown: #8e805b;
+  --colro-dark-blue: #045072;
+  --color-text-dark: #364f6b;
+  --color-text-light: #6c757d;
+}
+
+/*  fonts for header logo  */
+@font-face {
+  font-family: "dinnextltLight";
+  src: url("/fonts/dinnextlt_arabic_light.ttf");
+}
+
+@font-face {
+  font-family: "franklinGothic";
+  src: url("/fonts/franklin_gothic_medium_cond_regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+/***********************/
+/*     01. Header     */
+/***********************/
+
+.header_container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#header_top_bar {
+  background-color: var(--color-primary-blue);
+  height: 52px;
+  margin: -10px auto auto auto;
+}
+
+#header_logo {
+  display: inline-block;
+  margin-top: -35px;
+  max-width: 112px;
+}
+
+.header-element {
+  display: inline-block;
+  text-align: center;
+}
+
+#logo-text-ar {
+  font-family: "dinnextltLight";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  color: #0181bd;
+  margin-left: 50px;
+}
+
+#logo-text-eng {
+  font-family: "franklinGothic";
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #0181bd;
+  margin-right: 50px;
+}
+
+/*  Extra small devices (portrait phones, less than 576px)  */
+@media (min-width: 575.98px) {
+  #header_top_bar {
+    height: 12px;
+  }
+  #header_logo {
+    max-width: 28px;
+    margin-top: -25px;
+  }
+
+  #logo-text-ar {
+    font-size: 20px;
+    margin-left: 40px;
+  }
+
+  #logo-text-eng {
+    font-size: 12px;
+    margin-right: 40px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px)  */
+@media (min-width: 767.98px) {
+  #header_top_bar {
+    height: 32px;
+  }
+  #header_logo {
+    max-width: 56px;
+    margin-top: -15px;
+  }
+
+  #logo-text-ar {
+    font-size: 24px;
+    margin-left: 40px;
+  }
+
+  #logo-text-eng {
+    font-size: 16px;
+    margin-right: 40px;
+  }
+}
+
+/* Medium devices (tablets, less than 992px)  */
+@media (min-width: 991.98px) {
+  #header_top_bar {
+    height: 42px;
+  }
+  #header_logo {
+    max-width: 84px;
+    margin-top: -25px;
+  }
+
+  #logo-text-ar {
+    font-size: 30px;
+    margin-left: 40px;
+  }
+
+  #logo-text-eng {
+    font-size: 22px;
+    margin-right: 40px;
+  }
+}
+
+/***********************/
+/*     02. Nav bar     */
+/***********************/
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+nav {
+  padding-left: 15px;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black; /*لما يجي عليه الكلام*/
+}
+
+.topnav a.active {
+  background-color: #44b1ce;
+  color: white;
+  padding-left: 15px;
+  padding-right: 280px;
+  text-align: center;
+}
+.topnav a.Registration {
+  background-color: #8e805b;
+  color: white;
+  padding-left: 15px;
+  padding-right: 150px;
+}
+.topnav a.Notes {
+  background-color: #dfb029;
+  color: white;
+  padding-left: 15px;
+  padding-right: 180px;
+}
+
+.topnav .search-container {
+  float: left;
+}
+
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+/***********************/
+/*     03. Details     */
+/***********************/
+/*white section*/
+.basic-1 {
+  padding-top: 7.5rem;
+  padding-bottom: 15rem;
+  text-align: center;
+}
+
+.basic-1 .text-container {
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+  margin-left: 1rem;
+  margin-bottom: 7rem;
+}
+
+.text-container p {
+  font-size: 2.5rem;
+  margin-top: 3.5rem;
+}
+
+/* details menu */
+.menu-container img {
+  max-width: 36px;
+  margin: 0px 15px;
+  filter: brightness(0) invert(1);
+}
+
+.menu-button {
+  font-size: 36px;
+  color: #fff;
+  padding: 15px 30px;
+  margin-left: -3px;
+  border: none;
+  transition-duration: 0.4s;
+}
+
+#objective-btn {
+  width: 685px;
+  padding: 20px 30px;
+  background-color: var(--colro-dark-blue);
+}
+
+#benefits-btn {
+  background-color: var(--color-primary-yellow);
+}
+#benefits-btn img {
+  max-width: 44px;
+}
+
+#mission-btn {
+  background-color: var(--color-primary-brown);
+}
+#mission-btn img {
+  max-width: 28px;
+}
+#goals-btn {
+  background-color: var(--color-primary-blue);
+}
+
+.menu-button:focus {
+  outline: 1px solid rgba(222, 225, 236, 0.5);
+  outline-offset: -5px;
+}
+
+.menu-button:hover {
+  opacity: 0.8;
+}
+
+/***********************/
+/*     04. Slideshow   */
+/***********************/
+/*grey section*/
+.basic-0 {
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  text-align: center;
+  background-color: #f3f7fd;
+}
+
+/*.slideshow-container {
+}*/
+
+.slideshow-container p {
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+#slideshow {
+  width: 70%;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #dee1ec;
+  margin-top: 30px;
+}
+
+/**********************/
+/*     05. Footer     */
+/**********************/
+
+.footer {
+  padding-top: 3rem;
+  background-color: var(--color-primary-blue);
+  direction: rtl;
+  color: #fff;
+}
+
+.footer-col {
+  margin-bottom: 2.5rem;
+}
+
+.footer h4 {
+  margin-bottom: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.fa-map-marker {
+  font-size: 2rem;
+  margin-left: 5px;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+.fa-envelope {
+  font-size: 1.8rem;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/*social media icons */
+
+.icons-container {
+  text-align: center;
+}
+.fa-stack {
+  width: 2em;
+  margin-bottom: 0.9rem;
+  font-size: 2.5rem;
+}
+
+.fa-stack .fa-stack-1x {
+  color: var(--color-primary-blue);
+  transition: all 0.2s ease;
+}
+.fa-stack .fa-stack-2x {
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.fa-stack:hover .fa-stack-1x {
+  color: #fff;
+}
+
+.fa-stack:hover .fa-stack-2x {
+  color: var(--color-primary-blue);
+}
+
+/*----copyright------ */
+.email-link {
+  color: #dee1ec;
+}
+
+.copyright {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  background-color: var(--color-primary-blue);
+  text-align: center;
+}
+
+.copyright p {
+  padding-top: 1.3rem;
+  border-top: 1px solid #f3f7fd3a;
+  color: #dee1ec;
+}
