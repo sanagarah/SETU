@@ -22,7 +22,7 @@
       media="screen"
       href="../styles/home.css"
     />
-    <link rel="icon" href="images/favicon.png" />
+    <link rel="icon" href="../images/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap"
       rel="stylesheet"
@@ -37,7 +37,11 @@
         <div id="logo-text-eng" class="header-element">
           TAIBAH UNIVERSITY
         </div>
-        <img id="header_logo" class="img-fluid" src="images/header-logo.png" />
+        <img
+          id="header_logo"
+          class="img-fluid"
+          src="../images/header-logo.png"
+        />
 
         <div id="logo-text-ar" class="header-element">
           جــــامـــعــة طــيــبــة
@@ -47,17 +51,10 @@
     <!-- Navigation bar -->
     <div class="topnav" id="myTopnav">
       <nav>
-        <a class="active" href="">
-          الصفحة الرئيسية | برامج التدريب داخل وخارج المملكة</a
-        >
-        <a class="Registration" href="">التسجيل</a>
         <a class="Notes" href="">الملاحظات</a>
-        <div class="search-container">
-          <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search" />
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-        </div>
+        <a class="Registration" href="">التسجيل</a>
+        <a class="program" href="">برامج التدريب</a>
+        <a class="active" href="">الصفحة الرئيسية</a>
       </nav>
     </div>
 
@@ -80,18 +77,18 @@
               <div class="menu-container">
                 <div>
                   <button id="objective-btn" class="menu-button">
-                    <img src="images/objective_icon.png" /> الرسالة والرؤية
+                    <img src="../images/objective_icon.png" /> الرسالة والرؤية
                   </button>
                 </div>
-                <div>
+                <div class="button-container">
                   <button id="benefits-btn" class="menu-button">
-                    <img src="images/benefits_icon.png" />الفوائد
+                    <img src="../images/benefits_icon.png" />الفوائد
                   </button>
                   <button id="mission-btn" class="menu-button">
-                    <img src="images/mission_icon.png" />المهام
+                    <img src="../images/mission_icon.png" />المهام
                   </button>
                   <button id="goals-btn" class="menu-button">
-                    <img src="/images/goals_icon.png" />الأهداف
+                    <img src="..//images/goals_icon.png" />الأهداف
                   </button>
                 </div>
               </div>
@@ -104,11 +101,17 @@
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
+        <h1>الرسالة والرؤية</h1>
+        <div class="colors-container">
+          <div class="orange"></div>
+          <div class="brown"></div>
+          <div class="blue"></div>
+        </div>
         <p>
           تتمثل رسالة وحدة التدريب في التركيز على تطوير المهارات التطبيقية لدى
           خريجي الكليات من خلال بناء علاقات قوية بين الكليات وطلابها من جهة،
           وجهات التدريب الخارجية من جهة أخرى بما يضمن الانخراط السريع للخريجين
-          في سوق العمل.
+          في سوق العمل
         </p>
       </div>
     </div>
@@ -117,7 +120,67 @@
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Hello</p>
+        <h1>الفوائد</h1>
+        <div class="colors-container">
+          <div class="orange"></div>
+          <div class="brown"></div>
+          <div class="blue"></div>
+        </div>
+        <div class="list_container">
+          <p>
+            إكساب الطلاب المهارات العملية التي تتناسب ومتطلبات سوق العمل
+          </p>
+          <img class="img" src="../images/IAESTE_page.PNG" />
+        </div>
+        <div class="list_container">
+          <p>
+            ممارسة الطلاب لبعض المهام الوظيفية في جهة العمل ، والتعرف على بعض
+            الأدوات والآليات المستخدمة ضمن العملية الإدارية : كالسياسات والقواعد
+            والإجراءات ونماذج العمل والبرامج والموازنات والهياكل التنظيمية
+            وأدوات الرقابة والتقييم
+          </p>
+          <img class="img" src="../images/IAESTE_page.PNG" />
+        </div>
+        <div class="list_container">
+          <p>
+            الارتقاء بمستوى مهارات الطلاب المتعلقة بالاتصال الشفوي والكتابي وغير
+            اللفظي، وإكسابه القدرة على التعامل بشكل أفضل مع الآخرين في إطار بيئة
+            عمل واقعية
+          </p>
+          <img class="img" src="../images/IAESTE_page.PNG" />
+        </div>
+        <div class="list_container">
+          <p>
+            الارتقاء بمستوى مهارات الطلاب المتعلقة ببحث وتحليل بعض الموضوعات أو
+            المشاكل الفنية الواقعية في بيئة العمل والتي لها ارتباط بتخصصه؛ بحيث
+            يصبح قادرا على : وصف وتحليل هذه الموضوعات والربط بينها وبين الأفكار
+            والنظريات التي درسها في المقررات الدراسية ذات العلاقة بهذه الموضوعات
+          </p>
+          <img class="img" src="../images/IAESTE_page.PNG" />
+        </div>
+        <div class="list_container">
+          <p>
+            تنمية مهارات الطلاب في مجال كتابة التقارير؛ حيث تتاح له الفرصة
+            لتطبيق المعارف التي اكتسبها في هذا المجال؛ بحيث يصبح قادرا على إعداد
+            التقارير الإدارية بأنواعها المختلفة
+          </p>
+          <img class="img" src="../images/IAESTE_page.PNG" />
+        </div>
+        <div class="list_container">
+          <p>
+            زيادة فرصة حصول الطلاب على وظيفة مناسبة داخل المؤسسة التي تدرب فيها
+            بعد انتهاء فترة التدريب
+          </p>
+          <img class="img" src="../images/IAESTE_page.PNG" />
+        </div>
+        <div class="list_container">
+          <p>
+            دعم وتقوية العلاقة الايجابية مع جهات التدريب، من خلال عمليات التواصل
+            المستمرة التي تتم بين المشرفين الأكاديميين للطلاب والمسؤولين في هذه
+            الجهات، بما يدعم بناء صورة ذهنية ايجابية عن الكليات وخريجيها
+          </p>
+          <img class="img" src="../images/IAESTE_page.PNG" />
+        </div>
       </div>
     </div>
 
@@ -125,13 +188,33 @@
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>
-          تعزيز التفاهم والتعاون والثقة بين الطلاب والمؤسسات الأكاديمية وأصحاب
-          العمل والمجتمع الدولي. تفعيل برامج تبادل التدريب العملي بكفاءة عالية
-          بين الأعضاء من أجل تعزيز التنمية و التقنية والمهنية. العمل بصرف النظر
-          عن العرق أو اللون أو الجنس أو الثقافة أو المعتقدات الدينية أو السياسية
-          أو الإعاقة أو التعبير.
-        </p>
+        <h1>المهام</h1>
+        <div class="colors-container">
+          <div class="orange"></div>
+          <div class="brown"></div>
+          <div class="blue"></div>
+        </div>
+        <div class="list_container">
+          <p>
+            تعزيز التفاهم والتعاون والثقة بين الطلاب والمؤسسات الأكاديمية وأصحاب
+            العمل والمجتمع الدولي
+          </p>
+          <img class="img" src="../images/IAESTE_page.PNG" />
+        </div>
+        <div class="list_container">
+          <p>
+            تفعيل برامج تبادل التدريب العملي بكفاءة عالية من أجل تعزيز التنمية
+            التقنية والمهنية
+          </p>
+          <img class="img" src="../images/IAESTE_page.PNG" />
+        </div>
+        <div class="list_container">
+          <p>
+            العمل بصرف النظر عن العرق أو اللون أو الجنس أو الثقافة أو المعتقدات
+            الدينية أو الإعاقة أو التعبير
+          </p>
+          <img class="img" src="../images/IAESTE_page.PNG" />
+        </div>
       </div>
     </div>
 
@@ -139,25 +222,30 @@
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>
-          ممارسة الطلاب لبعض المهام الوظيفية في جهة العمل ، والتعرف على بعض
-          الأدوات والآليات المستخدمة ضمن العملية الإدارية : كالسياسات والقواعد
-          والإجراءات ، ونماذج العمل ، والبرامج ، والموازنات ، والهياكل التنظيمية
-          ، وأدوات الرقابة والتقييم. الارتقاء بمستوى مهارات الطلاب المتعلقة
-          بالاتصال الشفوي والكتابي وغير اللفظي، وإكسابه القدرة على التعامل بشكل
-          أفضل مع الآخرين في إطار بيئة عمل واقعية. الارتقاء بمستوى مهارات الطلاب
-          المتعلقة ببحث وتحليل بعض الموضوعات أو المشكلات الفنية الواقعية في بيئة
-          العمل والتي لها ارتباط بتخصصه؛ بحيث يصبح قادرا على : وصف وتحليل هذه
-          الموضوعات والربط بينها وبين الأفكار والنظريات التي درسها في المقررات
-          الدراسية ذات العلاقة بهذه الموضوعات تنمية مهارات الطلاب في مجال كتابة
-          التقارير؛ حيث تتاح له الفرصة لتطبيق المعارف التي اكتسبها في هذا
-          المجال؛ بحيث يصبح قادرا على إعداد التقارير الإدارية بأنواعها المختلفة
-          . زيادة فرصة حصول الطلاب على وظيفة مناسبة داخل المؤسسة التي تدرب فيها
-          بعد انتهاء فترة التدريب دعم وتقوية العلاقة الايجابية مع جهات التدريب،
-          من خلال عمليات التواصل المستمرة التي تتم بين المشرفين الأكاديميين
-          للطلاب والمسؤولين في هذه الجهات، بما يدعم بناء صورة ذهنية ايجابية عن
-          الكليات وخريجيها.
-        </p>
+        <h1>الأهداف</h1>
+        <div class="colors-container">
+          <div class="orange"></div>
+          <div class="brown"></div>
+          <div class="blue"></div>
+        </div>
+        <div class="list_container">
+          <p>
+            ممارسة الطلاب لبعض المهام الوظيفية في جهة العمل ، والتعرف على بعض
+            الأدوات والآليات المستخدمة ضمن العملية الإدارية : كالسياسات والقواعد
+            والإجراءات ، ونماذج العمل ، والبرامج ، والموازنات ، والهياكل
+            التنظيمية وأدوات الرقابة والتقييم
+          </p>
+          <img class="img" src="../images/IAESTE_page.PNG" />
+        </div>
+        <div class="list_container">
+          <p>
+            الارتقاء بمستوى مهارات الطلاب المتعلقة ببحث وتحليل بعض المواضيع أو
+            المشاكل الفنية الواقعية في بيئة العمل والتي لها ارتباط بتخصصه؛ بحيث
+            يصبح قادرًا على : وصف وتحليل هذه المواضيع والربط بينها وبين الأفكار
+            والنظريات التي درسها في المقررات الدراسية
+          </p>
+          <img class="img" src="../images/IAESTE_page.PNG" />
+        </div>
       </div>
     </div>
 
