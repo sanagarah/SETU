@@ -159,6 +159,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 0em;
 }
 .menu-container img {
   width: 10px;
@@ -230,12 +231,12 @@ nav {
 }*/
 
 .slideshow-container p {
-  font-size: smaller;
+  font-size: xx-small;
   padding-top: 5px;
 }
 
 .slideshow-container h2 {
-  font-size: small;
+  font-size: x-small;
   padding-bottom: 5px;
 }
 
@@ -432,10 +433,15 @@ nav {
     margin-top: 3.5rem;
   }
   .basic-1 {
-    padding-top: 7.5rem;
-    padding-bottom: 6rem;
+    padding-top: 10rem;
+    padding-bottom: 7rem;
     text-align: center;
   }
+
+  .menu-container {
+    margin-top: 9em;
+  }
+
   .menu-container img {
     width: 34px;
   }
@@ -457,13 +463,6 @@ nav {
     height: 30px;
     width: 27px;
   }
-  .modal-content {
-    font-size: large;
-  }
-
-  .modal-content h1 {
-    font-size: 40px;
-  }
 
   .color {
     height: 10px;
@@ -483,7 +482,7 @@ nav {
   }
 
   .slideshow-container h2 {
-    font-size: 25px;
+    font-size: x-large;
     padding-bottom: 10px;
   }
 
