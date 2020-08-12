@@ -1,0 +1,129 @@
+h1 {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 5px;
+  color: #2c73ab;
+  text-align: center;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  background-color: #d8b13cc9;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+}
+
+nav p {
+  color: white;
+  font-size: 5px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#IAESTE_logo {
+  width: 1em;
+  height: 1em;
+  margin: 2px;
+}
+
+.subText {
+  font-family: "Traditional Arabic";
+  color: #2c73ab;
+  font-size: 8px;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.checkImg {
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+}
+
+#flagImg {
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+#txt {
+  padding: 10px;
+  font-size: 5px;
+}
+
+#countriesImg {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 35px;
+    margin-top: 50px;
+  }
+
+  h2 {
+    font-size: 17px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  nav p {
+    font-size: 15px;
+  }
+
+  #IAESTE_logo {
+    width: 3em;
+    height: 3em;
+    margin: 5px;
+  }
+
+  .subText {
+    font-size: 22px;
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+
+  .checkImg {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+  }
+
+  #flagImg {
+    width: 500px;
+    height: 250px;
+    margin-top: 20px;
+  }
+
+  #txt {
+    padding: 20px;
+    font-size: 17px;
+  }
+
+  #countriesImg {
+    width: 650px;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+}
