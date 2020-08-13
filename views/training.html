@@ -33,6 +33,7 @@
       href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script defer src="../js/map.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -88,7 +89,9 @@
       خلال عملها تحت مظلة تخدم اكثر من 80 دولة في جميع انحاء العالم
     </h2>
 
-    <h1>اهداف جمعية ايستا</h1>
+    <div class="text-container">
+      <h1>أهداف جمعية إيستا</h1>
+    </div>
     <section>
       <p class="subText">
         تزويد الطلاب بالخبرة التقنية ذات الصلة لدراستهم
@@ -109,7 +112,9 @@
     </section>
 
     <br />
-    <h1>انضمام المملكة العربية السعودية للايستا</h1>
+    <div class="text-container">
+      <h1>انضمام المملكة العربية السعودية للايستا</h1>
+    </div>
     <section>
       <img id="flagImg" src="../images/SaudiFlag.PNG" />
       <p id="txt">
@@ -125,10 +130,11 @@
     </section>
     <br />
 
-    <h1>دول التدريب الخارجي</h1>
-    <center>
-      <img id="countriesImg" src="../images/IAESTE_countries.PNG" />
-    </center>
+    <div class="text-container">
+      <h1>دول التدريب الخارجي</h1>
+    </div>
+
+    <div id="chartdiv"></div>
 
     <br />
 
@@ -204,4 +210,8 @@
       </div>
     </div>
   </body>
+  <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
 </html>
