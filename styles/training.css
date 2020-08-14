@@ -1,7 +1,6 @@
 h1 {
   font-size: 12px;
   text-align: center;
-  margin-top: 10px;
 }
 
 h2 {
@@ -10,7 +9,6 @@ h2 {
   text-align: center;
   margin-left: 7px;
   margin-right: 7px;
-  margin-bottom: 20px;
 }
 
 p {
@@ -70,16 +68,8 @@ section {
   font-size: 5px;
 }
 
-#countriesImg {
-  width: 200px;
-  height: 100px;
-  margin-bottom: 20px;
-}
-
 #chartdiv {
-  margin-top: 3em;
   width: 100%;
-  height: 500px;
   overflow: hidden;
   position: relative;
 }
@@ -95,9 +85,9 @@ section {
   cursor: pointer;
 }
 .pulse {
-  width: 7px;
-  height: 7px;
-  border: 4px solid #fdcc39;
+  width: 4px;
+  height: 4px;
+  border: 3px solid #fdcc39;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
@@ -107,7 +97,7 @@ section {
   box-sizing: border-box;
 }
 .map-marker .dot {
-  border: 10px solid #dfb029;
+  border: 5px solid #dfb029;
   background: transparent;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
@@ -128,10 +118,58 @@ section {
   box-sizing: border-box;
 }
 
+.map-marker.map-clickable {
+  cursor: pointer;
+}
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(0);
+    opacity: 0;
+  }
+  25% {
+    -moz-transform: scale(0);
+    opacity: 0.1;
+  }
+  50% {
+    -moz-transform: scale(0.1);
+    opacity: 0.3;
+  }
+  75% {
+    -moz-transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    -moz-transform: scale(1);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  25% {
+    -webkit-transform: scale(0);
+    opacity: 0.1;
+  }
+  50% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.3;
+  }
+  75% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+
 @media (min-width: 900px) {
   h1 {
     font-size: 35px;
-    margin-top: 50px;
   }
 
   h2 {
@@ -163,8 +201,8 @@ section {
   }
 
   #flagImg {
-    width: 500px;
-    height: 250px;
+    width: 400px;
+    height: 180px;
     margin-top: 20px;
   }
 
@@ -172,10 +210,17 @@ section {
     padding: 20px;
     font-size: 17px;
   }
+  .pulse {
+    width: 7px;
+    height: 7px;
+    border: 5px solid #fdcc39;
+  }
+  .map-marker .dot {
+    border: 7px solid #dfb029;
+  }
 
-  #countriesImg {
-    width: 550px;
-    height: 300px;
-    margin-bottom: 20px;
+  #chartdiv {
+    margin-top: 3em;
+    height: 500px;
   }
 }
