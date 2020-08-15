@@ -66,6 +66,7 @@ section {
 #txt {
   padding: 10px;
   font-size: 5px;
+  color: rgb(1, 83, 1);
 }
 
 #chartdiv {
